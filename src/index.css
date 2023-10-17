@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-l from-gray-50 to-gray-200;
+}
+.main-title {
+  font-family: "Bigelow Rules", serif;
+}
