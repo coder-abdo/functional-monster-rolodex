@@ -6,7 +6,9 @@ interface Props {
 }
 export const Monsters: FC<Props> = ({ monsters }) => {
   return (
-    <div className="flex flex-wrap justify-center gap-5 w-full">
+    <div
+      data-testid="monsters-container"
+      className="flex flex-wrap justify-center gap-5 w-full">
       {monsters.map((monster) => (
         <Monster key={monster.id} monster={monster} />
       ))}
